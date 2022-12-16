@@ -7,7 +7,7 @@ class Circle #クラス名の最初は大文字
 
     #関数などが連続するときは間に空行を１行入れること
     def circumference
-      puts @radius * 2 * 3.14
+      puts @radius * 2 * 3.14 #コメントです
     end
 
     def radius=(radius)
