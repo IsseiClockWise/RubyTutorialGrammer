@@ -1,12 +1,26 @@
-#テストの成績を評価する
-score = 75
+# 円についての処理をするクラスを宣言
+class Circle #クラス名の最初は大文字
 
-if score > 90
-    puts "めっちゃ凄い"
-elsif score > 80
-    puts "凄い"
-elsif score == 75
-    puts "良い感じ"
-else
-    puts "頑張れ"
+    def area_circle
+      puts @radius * @radius * 3.14
+    end
+
+    #関数などが連続するときは間に空行を１行入れること
+    def circumference
+      puts @radius * 2 * 3.14
+    end
+
+    def radius=(radius)
+        @radius = radius
+    end
 end
+
+#インスタンスを生成
+circle1 = Circle.new # クラス名.new
+
+#半径を入力
+circle1.radius = 3
+
+#関数を呼び出す
+circle1.area_circle
+circle1.circumference

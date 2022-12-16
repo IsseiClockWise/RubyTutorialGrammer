@@ -27,18 +27,18 @@
 #テストの成績を評価する
 # score = 75
 
-# if score > 90
+# if score > 90 # 90より上の場合 90以上の場合は >= を使う
 #     puts "めっちゃ凄い"
-# elsif score > 80
+# elsif score > 80 # 80未満の場合 80以下の場合は <= を使う
 #     puts "凄い"
-# elsif score > 60
+# elsif score == 75 # 75と同じ場合 75と同じじゃない場合は != を使う
 #     puts "良い感じ"
 # else
 #     puts "頑張れ"
 # end
 
 # list = [1, 2, 3, 4, 5]
-# for item in list #item = listの各要素
+# for item in list #itemはlistの各要素
 #     puts item
 # end
 
@@ -49,15 +49,15 @@
 # end
 
 #円の面積を計算するメソッド
-# def area_circle(radius)
+# def area_circle(radius) # def 関数名（引数）
 #     area = radius * radius * 3.14
 #     return area
-# end
+# end # endで終わる
 
 #メソッドを呼び出す
-# puts area_circle(2) #引数に2を指定
+# puts area_circle(2) #引数に2を指定 2 * 2 * 3.14 = 12.56
 
-#円についての処理をするクラスを宣言
+# 円についての処理をするクラスを宣言
 # class Circle #クラス名の最初は大文字
 
 #     def area_circle
@@ -75,7 +75,7 @@
 # end
 
 #インスタンスを生成
-# circle1 = Circle.new
+# circle1 = Circle.new # クラス名.new
 
 #半径を入力
 # circle1.radius = 3
