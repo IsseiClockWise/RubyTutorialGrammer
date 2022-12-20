@@ -10,7 +10,7 @@ class Circle #クラス名の最初は大文字
       puts @radius * 2 * 3.14 #コメントです
     end
 
-    def radius=(radius)
+    def radius=(radius) #jojo
         @radius = radius
     end
 end
